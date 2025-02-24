@@ -9,11 +9,6 @@
 - [[마크다운 문법 정리]]
 
 
-### 추가 희망 글 (주제)
-
-메일로 보내주세요:
-lemonaatree@gmail.com
-
 ## BackLinks
-  
+lemonaatree@gmail.com
 https://sites.google.com/view/lemonaa  
