@@ -1,7 +1,0 @@
-
-DevOps + Medical
-
-Medical + Ops
-
-
-

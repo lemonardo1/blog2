@@ -141,26 +141,17 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Main/Frontpage.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
-            }
-          },
-          {
-            "id": "3fa5cea3a08b6c7c",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "title": "Outline of Frontpage"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -178,7 +169,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ab4ed1722acd88c1",
+  "active": "90790115ad324796",
   "lastOpenFiles": [
     "i.py",
     "Main/Backpage 2.md",
