@@ -1,4 +1,5 @@
-
+[[single cell analysis pipeline]]
+[[scanpy]]
 
 # 싱글 셀 분석 (Single Cell Analysis)
 
@@ -33,3 +34,77 @@
 
 ## 결론
 싱글 셀 분석은 현대 생명 과학 연구에서 필수불가결한 도구로 자리매김하고 있으며, 앞으로도 다양한 분야에서 혁신적인 연구 결과를 도출할 것으로 기대된다. 이를 통해 우리는 더욱 복잡한 생명 현상들을 명확하게 이해하고 해결책을 찾아낼 수 있을 것이다.
+
+
+## 파이썬 Single cell analysis
+
+
+## 파이썬을 활용한 싱글 셀 분석
+
+파이썬은 싱글 셀 분석에서 강력한 도구로 사용되며, 다양한 라이브러리와 패키지를 통해 데이터를 처리하고 시각화할 수 있다. 이 섹션에서는 파이썬을 활용한 싱글 셀 분석의 기본적인 개념과 도구를 소개한다.
+
+### 주요 라이브러리 및 툴
+
+1. **Scanpy**
+   - Scanpy는 대규모 싱글 셀 RNA 시퀀싱 데이터 세트를 처리하고 분석하기 위한 파이썬 기반의 오픈 소스 라이브러리이다.
+   - 기본적인 데이터 전처리, 차원 축소, 클러스터링, 시각화 등 다양한 기능을 제공한다.
+
+2. **Pandas**
+   - Pandas는 데이터 조작과 분석을 위한 파이썬 패키지로서, 테이블 형식의 데이터를 쉽게 다룰 수 있는 DataFrame 객체를 제공한다.
+   - 데이터를 정리하고 요약 통계를 계산하는 데 유용하다.
+
+3. **NumPy**
+   - NumPy는 대규모 다차원 배열과 행렬 연산을 지원하는 파이썬 라이브러리로, 수학적 계산에 주로 사용된다.
+   - 빠른 배열 연산과 함께 과학 컴퓨팅에 필수적이다.
+
+4. **Matplotlib & Seaborn**
+   - Matplotlib는 데이터를 시각화하기 위한 기본적인 플롯팅 라이브러리이다.
+   - Seaborn은 Matplotlib를 기반으로 하여 더욱 미려하고 복잡한 통계적 그래프를 쉽게 그릴 수 있도록 돕는다.
+
+5. **Louvain & Leiden Algorithms**
+   - 이 알고리즘들은 네트워크 커뮤니티 탐지를 위해 개발된 알고리즘으로, 싱글 셀 RNA-seq 데이터의 클러스터링에 자주 사용된다.
+   
+### 예제 워크플로우
+
+다음은 Scanpy와 다른 라이브러리를 사용하여 간단히 싱글 셀 RNA-seq 데이터를 처리하고 분석하는 예제이다:
+
+```python
+import scanpy as sc
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# 데이터 로드
+adata = sc.read_10x_mtx(
+    'path_to_data/',  # 경로 수정 필요
+    var_names='gene_symbols',
+    cache=True)
+
+# 전처리: 품질 제어 및 정규화
+sc.pp.filter_cells(adata, min_genes=200)
+sc.pp.filter_genes(adata, min_cells=3)
+sc.pp.normalize_total(adata, target_sum=1e4)
+sc.pp.log1p(adata)
+
+# 고변이 유전자 식별
+sc.pp.highly_variable_genes(adata)
+adata = adata[:, adata.var['highly_variable']]
+
+# PCA와 UMAP을 통한 차원 축소
+sc.tl.pca(adata)
+sc.pl.pca_variance_ratio(adata)  # 주성분의 설명력 시각화
+
+sc.pp.neighbors(adata, n_neighbors=10, n_pcs=40)
+sc.tl.umap(adata)
+
+# 클러스터링 (Louvain 알고리즘)
+sc.tl.louvain(adata)
+
+# 시각화: UMAP 플롯 생성
+sc.pl.umap(adata, color=['louvain'])
+
+plt.show()
+```
+
+### 결론
+
+파이썬은 다양한 오픈 소스 라이브러리를 통해 싱글 셀 분석을 용이하게 한다. 연구자는 이러한 도구들을 활용하여 대량의 생물학적 데이터를 효율적으로 처리하고 의미 있는 결과를 얻을 수 있다. 앞으로도 이러한 기술들은 생물학 연구에서 더 큰 역할을 할 것으로 기대된다.
