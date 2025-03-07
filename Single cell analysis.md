@@ -108,3 +108,13 @@ plt.show()
 ### 결론
 
 파이썬은 다양한 오픈 소스 라이브러리를 통해 싱글 셀 분석을 용이하게 한다. 연구자는 이러한 도구들을 활용하여 대량의 생물학적 데이터를 효율적으로 처리하고 의미 있는 결과를 얻을 수 있다. 앞으로도 이러한 기술들은 생물학 연구에서 더 큰 역할을 할 것으로 기대된다.
+
+
+
+
+---
+### 대한민국 single cell 분석 연구실 목록
+
+[주영석 교수님 KAIST](https://gsmse.kaist.ac.kr/boards/view/professor_01/21)
+[박종은 교수님 KAIST](https://gsmse.kaist.ac.kr/boards/view/professor_01/12)
+[최정균 교수님 KAIST](https://bioeng.kaist.ac.kr/index.php?mid=bio_03_01&document_srl=6860)
