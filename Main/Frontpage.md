@@ -9,10 +9,12 @@
 - [[마크다운 문법 정리]]
 
 
-### 레몬 일지
+### 레몬
 - [[레몬의 연구일지]]  
 - [[레몬의 창업일지]]  
-  
+- [[레몬의 cancer & AI 스터디]]
+
+
 ## BackLinks
 lemonaatree@gmail.com
 https://sites.google.com/view/lemonaa  
