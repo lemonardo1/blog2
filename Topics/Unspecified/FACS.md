@@ -1,6 +1,4 @@
-
-
-It looks like you're interested in the topic of FACS within the field of bioinformatics. FACS generally refers to Fluorescence-Activated Cell Sorting, a powerful technique used in cell biology and bioinformatics for sorting a heterogeneous mixture of cells into different populations based on specific fluorescent markers. Here's an overview that might help you understand its application and significance:
+Fluorescence-Activated Cell Sorting, a powerful technique used in cell biology and bioinformatics for sorting a heterogeneous mixture of cells into different populations based on specific fluorescent markers.
 
 ### Overview of FACS:
 

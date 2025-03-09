@@ -24,7 +24,7 @@
 | **[[Takeda Pharmaceutical]]**          | Japan               | Pharmaceuticals, Medicinal Chemical & Botanical Products                   | n/a         |
 | **[[Medtronic]]**                      | Ireland             | Irradiation, Electromedical & Electrotherapeutic Equipment                 | n/a         |
 | **[[Shanghai Pharmaceuticals]]**       | China               | Pharmaceuticals, Medicinal Chemical & Botanical Products                   | n/a         |
-| **[[Astrazeneca]]**                    | United Kingdom      | Pharmaceuticals, Medicinal Chemical & Botanical Products                   | n/a         |
+| **[[AstraZeneca]]**                    | United Kingdom      | Pharmaceuticals, Medicinal Chemical & Botanical Products                   | n/a         |
 | **[[China Resources Pharmaceutical]]** | Hong Kong SAR China | Pharmaceuticals, Medicinal Chemical & Botanical Products                   | n/a         |
 | **[[Amgen]]**                          | United States       | Pharmaceuticals, Medicinal Chemical & Botanical Products                   | n/a         |
 | **[[Gilead Sciences 1]]**              | United States       | Pharmaceuticals, Medicinal Chemical & Botanical Products                   | n/a         |

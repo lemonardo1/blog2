@@ -1,4 +1,4 @@
-[[pathology]]
+[[Pathology]]
 AI
 
 Data
